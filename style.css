@@ -1,9 +1,40 @@
 :root {
   --bg-color: #0991b1;
+  --secondary-bg-color: #fff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 body {
+}
+
+.container {
+}
+
+header,
+main,
+footer {
   background-color: var(--bg-color);
+  padding: 40px 10%;
+}
+
+header {
+  display: flex;
+}
+
+header .about {
+}
+
+main {
+  background-color: var(--secondary-bg-color);
+}
+
+footer {
+  color: var(--secondary-bg-color);
 }
 
 img.header-image,
