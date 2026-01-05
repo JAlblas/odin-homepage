@@ -20,6 +20,7 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
+  margin: 0;
 }
 
 .container {
@@ -37,22 +38,28 @@ header {
   display: flex;
 }
 
+.header-image {
+  box-shadow: 2px 2px 2px #000;
+}
+
 header .about {
-  border: 1px solid #000;
   background-color: #fff;
   margin: 25px 0px;
   padding: 25px;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .about-text {
+  line-height: 1.5rem;
 }
 
 .social-icons {
-  text-align: right;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
 }
 
 main {
