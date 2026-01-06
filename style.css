@@ -23,7 +23,7 @@ h6 {
   margin: 0;
 }
 
-.container {
+#container {
   display: grid;
 }
 
@@ -43,18 +43,38 @@ header {
   );
 }
 
-#header-content {
+.header-content {
   display: flex;
 }
 
-#header-image {
-  box-shadow: 2px 2px 2px #000;
+.img-container .title-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  bottom: 52px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.header-image {
+  box-shadow: 1px 1px 1px #313131;
+  object-fit: cover;
+  max-width: 40vw;
 }
 
 #about {
   background-color: #fff;
+  height: 100%;
   margin: 25px 0px;
   padding: 25px;
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -62,7 +82,7 @@ header {
   box-shadow: 1px 1px 1px #363636;
 }
 
-#about-text {
+.about-text {
   line-height: 1.5rem;
 }
 
