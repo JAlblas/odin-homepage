@@ -111,15 +111,32 @@ main h2 {
 .projects {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
-  padding: 20px 0px;
+  padding: 10px 0px 30px;
 }
 
 .project {
   border: 3px solid #efefef;
-  padding: 25px;
   height: 300px;
+}
+
+.project-header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-header .social-icons {
+  font-size: 1rem;
+}
+
+.project-name {
+  margin-bottom: 10px;
+}
+
+.project-info {
+  padding: 5px 10px;
 }
 
 .project-image {
@@ -127,11 +144,33 @@ main h2 {
   height: 200px;
 }
 
+#project-image-1 {
+  background-color: #3499b0;
+}
+
+#project-image-2 {
+  background-color: #ffc823;
+}
+
+#project-image-3 {
+  background-color: #dd3f3f;
+}
+
+#project-image-4 {
+  background-color: #9864d3;
+}
+
+#project-image-5 {
+  background-color: #1982f2;
+}
+#project-image-6 {
+  background-color: #6fd118;
+}
+
 footer {
   color: var(--secondary-bg-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: flex-end;
   gap: 10%;
 }
 
