@@ -23,6 +23,10 @@ h6 {
   margin: 0;
 }
 
+i {
+  cursor: pointer;
+}
+
 #container {
   display: grid;
 }
@@ -75,6 +79,12 @@ header h2 {
   max-width: 100%;
 }
 
+#mobile-title {
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+
 #about {
   background-color: #fff;
   height: 100%;
@@ -111,7 +121,7 @@ main h2 {
 .projects {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
   padding: 10px 0px 30px;
 }
@@ -197,4 +207,28 @@ footer p {
 .footer-image {
   width: 100%;
   max-width: 800px;
+}
+
+@media (max-width: 1200px) {
+  .header-content {
+    display: block;
+  }
+  .footer-info .social-icons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    display: block;
+  }
+
+  .header-content .title-box {
+    position: static;
+    display: none;
+  }
+
+  #mobile-title {
+    display: block;
+  }
 }
